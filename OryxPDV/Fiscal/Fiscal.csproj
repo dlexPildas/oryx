@@ -1,0 +1,82 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="appsettings.BebelandiaFilial.json" />
+    <_ContentIncludedByDefault Remove="appsettings.Bijoux.json" />
+    <_ContentIncludedByDefault Remove="appsettings.BijouxFilial.json" />
+    <_ContentIncludedByDefault Remove="appsettings.BrilhanteLoja01.json" />
+    <_ContentIncludedByDefault Remove="appsettings.BrilhanteLoja02.json" />
+    <_ContentIncludedByDefault Remove="appsettings.BrilhanteLoja03.json" />
+    <_ContentIncludedByDefault Remove="appsettings.BrilhanteLoja04.json" />
+    <_ContentIncludedByDefault Remove="appsettings.BrilhanteLoja05.json" />
+    <_ContentIncludedByDefault Remove="appsettings.CPMariaCatarina.json" />
+    <_ContentIncludedByDefault Remove="appsettings.CPSextoSentido.json" />
+    <_ContentIncludedByDefault Remove="appsettings.CPSintonia.json" />
+    <_ContentIncludedByDefault Remove="appsettings.Emize.json" />
+    <_ContentIncludedByDefault Remove="appsettings.IntenseCCF.json" />
+    <_ContentIncludedByDefault Remove="appsettings.IsaKids.json" />
+    <_ContentIncludedByDefault Remove="appsettings.Karu.json" />
+    <_ContentIncludedByDefault Remove="appsettings.MariaFilial.json" />
+    <_ContentIncludedByDefault Remove="appsettings.PituchinhusGramado.json" />
+    <_ContentIncludedByDefault Remove="appsettings.PituchinhusPOA.json" />
+    <_ContentIncludedByDefault Remove="appsettings.Production.json" />
+    <_ContentIncludedByDefault Remove="appsettings.SanthusLoja2.json" />
+    <_ContentIncludedByDefault Remove="appsettings.Staging.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\BebelandiaFilial.pubxml" />
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\BIjoux.pubxml" />
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\BijouxFilial.pubxml" />
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\BrilhanteLoja01.pubxml" />
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\BrilhanteLoja02.pubxml" />
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\BrilhanteLoja03.pubxml" />
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\BrilhanteLoja04.pubxml" />
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\BrilhanteLoja05.pubxml" />
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\CPMariaCatarina.pubxml" />
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\CPSextoSentido.pubxml" />
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\CPSintonia.pubxml" />
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\Emize.pubxml" />
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\IntenseCCF.pubxml" />
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\IsaKids.pubxml" />
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\Karu.pubxml" />
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\MariaFilial.pubxml" />
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\PituchinhusGramado.pubxml" />
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\PituchinhusPOA.pubxml" />
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\Production.pubxml" />
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\SanthusLoja2.pubxml" />
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\Staging.pubxml" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.18" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.5" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\OryxDomain\OryxDomain\OryxDomain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Models\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Update="appsettings.Development.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+	  </Content>
+	  <Content Update="appsettings.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+	  </Content>
+	</ItemGroup>
+
+
+</Project>

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.18" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\OryxDomain\OryxDomain\OryxDomain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MelhorEnvio">
+      <HintPath>D:\Projetos\Magna\MelhorEnvio\MelhorEnvio\obj\Release\net7.0\MelhorEnvio.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\OryxDomain",
+    "\\OryxDomain\\OryxDomain",
+    "\\OryxDomain\\OryxDomain\\Models",
+    "\\OryxDomain\\OryxDomain\\Repository",
+    "\\OryxPDV",
+    "\\OryxPDV\\Order",
+    "\\OryxPDV\\Order\\Services"
+  ],
+  "SelectedNode": "\\OryxDomain\\OryxDomain\\Repository\\TagRepository.cs",
+  "PreviewInSolutionExplorer": false
+}
